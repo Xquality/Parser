@@ -1,0 +1,9 @@
+{
+  "name": "a-simple-parser-93",
+  "version": "1.0.0",
+  "description": "Parser for CSV files",
+  "main": "index.js",
+  "author": {
+    "name": "Hjalti"
+  }
+}
