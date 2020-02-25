@@ -5,7 +5,18 @@ var m_fileToParse = 'vehicles.csv';
 var array = m_parser.ParseCSV(m_fileToParse);
 if (array != null) {
     if (array.length > 0) {
-        console.log("\nNum of objects/entries: " + array.length);
+        var numEntries = 0;
+
+        array.forEach(entry => {
+            console.log(entry);
+            if (entry === "" || entry == null) {
+                return;
+            }
+            else
+                numEntries++;
+        })
+
+        console.log("\nNum of objects/entries: " + numEntries);
         array.forEach(obj => {
             console.log(obj);
         })
