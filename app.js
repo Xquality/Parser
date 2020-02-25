@@ -1,7 +1,7 @@
 const Parser = require('./parser.js');
 const m_logger = new Parser();
 
-var m_fileToParse = 'fredy.csv';
+var m_fileToParse = 'vehicles.csv';
 var array = m_logger.ParseCSV(m_fileToParse);
 if (array != null) {
     if (array.length > 0) {
