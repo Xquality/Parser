@@ -8,7 +8,7 @@ if (array != null) {
         var numEntries = 0;
 
         array.forEach(entry => {
-            console.log(entry);
+
             if (entry === "" || entry == null) {
                 return;
             }
