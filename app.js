@@ -1,8 +1,8 @@
 const Parser = require('./parser.js');
-const m_logger = new Parser();
+const m_parser = new Parser();
 
 var m_fileToParse = 'vehicles.csv';
-var array = m_logger.ParseCSV(m_fileToParse);
+var array = m_parser.ParseCSV(m_fileToParse);
 if (array != null) {
     if (array.length > 0) {
         console.log("\nNum of objects/entries: " + array.length);
